@@ -12,4 +12,12 @@ RSpec.describe Todo do
 			expect(todo.done?).to eq false
 		end
 	end
+
+	context "Once a task is created" do
+		it "mark_done changes the status of the todo" do
+			todo = Todo.new("do this")
+			todo.mark_done!
+			expect(todo.done?).to eq true
+		end
+	end
 end

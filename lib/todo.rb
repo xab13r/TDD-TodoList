@@ -8,8 +8,7 @@ class Todo
   end
 
   def mark_done!
-	# Marks the todo as done
-	# Returns nothing
+    @task['status'] = true
   end
 
   def done?
