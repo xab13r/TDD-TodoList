@@ -8,13 +8,11 @@ class TodoList
   end
 
   def incomplete
-	incomplete_list = @list.select { |item| item.done? == false }
-	return incomplete_list
+	return @list.select { |item| item.done? == false }
   end
 
   def complete
-	complete_list = @list.select { |item| item.done? == true }
-	return complete_list
+	return @list.select { |item| item.done? == true }
   end
 
   def give_up!
